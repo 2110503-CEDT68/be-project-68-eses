@@ -6,7 +6,7 @@ const swaggerUi = require("swagger-ui-express");
 const express = require("express");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
-const connectDB = require("../Pushing/Nei/config/db");
+const connectDB = require("./config/db");
 
 const swaggerOptions = {
   swaggerDefinition: {
