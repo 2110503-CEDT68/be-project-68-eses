@@ -33,6 +33,7 @@ connectDB();
 
 // Route files
 const coworkingspaces = require('./routes/coworkingspaces');
+const auth = require('./routes/auth');
 
 const app = express();
 
@@ -47,6 +48,7 @@ app.use(cookieParser());
 
 // Mount routers
 app.use('/api/v1/coworkingspaces', coworkingspaces);
+app.use('/api/v1/auth', auth);
 
 const PORT = process.env.PORT || 5000;
 
